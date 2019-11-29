@@ -25,8 +25,8 @@ passport.use(new JwtStrategy({
 //Google Api Authentication
 
 passport.use('googleToken',new GooglePlusTokenStrategy({
-    clientID : '286076279776-202b7g332c9gglrbajhg6guk06fe4fk8.apps.googleusercontent.com',
-    clientSecret : 'SRBphOqQWTlnZdLB3rOGpFIq'
+    clientID : 'Your client ID',
+    clientSecret : 'Your Secret ID'
 },async (accessToken,refreshToken,profile,done) =>{
     console.log('accessToken',accessToken);
     console.log('refreshToken',refreshToken);
